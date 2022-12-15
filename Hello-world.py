@@ -2,6 +2,8 @@ import os
 import time
 import logging as log
 
+log.basicConfig(format="[ %(levelname)s ] %(message)s", level=log.INFO, stream=sys.stdout)
+
 log.info("Hello world")
   
 f = open('/app/mount-folder/data.txt', 'a+')
