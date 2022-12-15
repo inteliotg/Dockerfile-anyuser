@@ -3,7 +3,7 @@ import time
 import logging
 
 while True:
-  time.sleep(60)
+  time.sleep(5)
   print("Hello world")
 
 print("exit")
