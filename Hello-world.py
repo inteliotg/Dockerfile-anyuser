@@ -6,4 +6,4 @@ while True:
   time.sleep(5)
   log.info("Hello world")
 
-print("exit")
+  log.info("exit")
