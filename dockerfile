@@ -14,4 +14,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 RUN mkdir -p /opt/results
 RUN mkdir -p /app/mount-folder
 
-ENTRYPOINT /bin/bash -c "python3 Hello-world.py"
+ENTRYPOINT /bin/bash -c "source /app/entry.sh"
