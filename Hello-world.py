@@ -1,6 +1,6 @@
 import os
 import time
-import logging
+import logging as log
 
 f = open('/app/mount-folder/data.txt', 'a+')
 f.write('Hello Python' + os.linesep)
