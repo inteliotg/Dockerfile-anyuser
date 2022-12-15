@@ -12,5 +12,6 @@ RUN pip3 install --upgrade pip
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 RUN mkdir -p /opt/results
+RUN mkdir -p /app/mount-folder
 
-CMD ["python3", "Hello-world.py"]
+ENTRYPOINT /bin/bash -c "python3 Hello-world.py"
