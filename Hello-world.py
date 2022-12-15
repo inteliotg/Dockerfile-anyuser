@@ -4,6 +4,6 @@ import logging
 
 while True:
   time.sleep(5)
-  print("Hello world")
+  log.info("Hello world")
 
 print("exit")
