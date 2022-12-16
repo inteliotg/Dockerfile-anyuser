@@ -7,7 +7,7 @@ log.basicConfig(format="[ %(levelname)s ] %(message)s", level=log.INFO, stream=s
 log.info("Demo log output in container")
 log.info("--Hello Container--")
 
-log.info("Demo creating file in mount point")
+log.info("Demo creating file in output mount point")
 f = open('./data.txt', 'a+')
 f.write('Hello Python' + os.linesep)
 
