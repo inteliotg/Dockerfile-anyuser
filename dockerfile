@@ -11,7 +11,7 @@ COPY . .
 RUN pip3 install --upgrade pip
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-RUN mkdir -p /opt/results
+RUN mkdir -p /app/results
 RUN mkdir -p /app/mount-folder
 
 ENTRYPOINT /bin/bash -c "source /app/entry.sh"
