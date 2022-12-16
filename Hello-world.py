@@ -8,7 +8,7 @@ log.info("Demo log output in container")
 log.info("--Hello Container--")
 
 log.info("Demo creating file in mount point")
-f = open('/app/mount-folder/data.txt', 'a+')
+f = open('./data.txt', 'a+')
 f.write('Hello Python' + os.linesep)
 
 log.info("Demo keep the container live with max limitation")
