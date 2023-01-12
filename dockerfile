@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-USER root
+USER 0
 
 RUN apt-get update 
 RUN apt-get install ffmpeg libsm6 libxext6  -y
