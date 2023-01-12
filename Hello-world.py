@@ -5,7 +5,7 @@ import sys
 
 log.basicConfig(format="[ %(levelname)s ] %(message)s", level=log.INFO, stream=sys.stdout)
 log.info("Demo log output in container")
-log.info("--Hello Container--")
+log.info("--Hello World--")
 
 log.info("Demo creating file in output mount point")
 f = open('./data.txt', 'a+')
