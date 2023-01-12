@@ -15,4 +15,4 @@ RUN mkdir -p /app/results
 RUN mkdir -p /app/mount-folder
 RUN chmod -R 777 /app
 
-ENTRYPOINT /bin/bash -c "source /app/entry.sh"
+ENTRYPOINT /bin/bash -c "source /app/entryw.sh"
