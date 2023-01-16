@@ -3,7 +3,7 @@ USER 0
 
 RUN apt-get update 
 RUN apt-get install ffmpeg libsm6 libxext6  -y
-RUN apt-get install -y git python3-pip numactl iptables libunwind-devel libtool gperftools-devel net-tools procps-ng -y
+RUN apt-get install -y git python3-pip iptables
 WORKDIR /app
 
 COPY . .
