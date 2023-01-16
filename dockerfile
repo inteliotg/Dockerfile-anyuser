@@ -1,15 +1,9 @@
-#FROM ubuntu:18.04
-#USER 0
-FROM rockylinux:8.5
-RUN dnf -y install epel-release dnf-plugins-core && \
-    dnf config-manager --set-enabled powertools && \
-    dnf -y install ufw && \
-    dnf install -y numactl iptables libunwind-devel libtool gperftools-devel net-tools procps-ng && dnf -y update && dnf -y update
+FROM ubuntu:18.04
+USER 0
 
 RUN apt-get update 
 RUN apt-get install ffmpeg libsm6 libxext6  -y
-RUN apt-get install -y git python3-pip
-
+RUN apt-get install -y git python3-pip numactl iptables libunwind-devel libtool gperftools-devel net-tools procps-ng -y
 WORKDIR /app
 
 COPY . .
