@@ -10,6 +10,7 @@ log.info("--Hello Container--")
 log.info("Demo creating file in output mount point")
 f = open('./data.txt', 'a+')
 f.write('Hello Python' + os.linesep)
+f.close()
 log.info("Had created demo.txt file\n You can go to output point to check with terminal or filesystem.")
 
 log.info("Demo keep the container live with max limitation")
